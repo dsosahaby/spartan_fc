@@ -21,7 +21,7 @@ AR Path="/5F78701C/5F79F848" Ref="J?"  Part="1"
 AR Path="/5F79A745/5F79F848" Ref="J14"  Part="1" 
 F 0 "J14" H 2028 1526 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 2028 1435 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2000 1550 50  0001 C CNN
+F 2 "Connector_SMD:01x02_3mm" H 2000 1550 50  0001 C CNN
 F 3 "~" H 2000 1550 50  0001 C CNN
 	1    2000 1550
 	1    0    0    -1  

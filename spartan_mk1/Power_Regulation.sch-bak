@@ -105,7 +105,7 @@ Connection ~ 8500 4400
 Wire Notes Line
 	6150 5000 6150 4000
 Text Notes 6150 5200 0    50   ~ 0
-Low Dropout Voltage Regulator to power stm32\nProtection Diode: SS34
+Low Dropout Voltage Regulator to power stm32\nProtection Diode: B5819W
 $Comp
 L Regulator_Linear:NCP1117-3.3_TO252 U?
 U 1 1 5F7A601F
@@ -236,8 +236,6 @@ $EndComp
 Wire Wire Line
 	7300 1700 7300 1650
 Wire Wire Line
-	7300 1350 7650 1350
-Wire Wire Line
 	7850 1750 7900 1750
 $Comp
 L Device:L_Small L2
@@ -258,7 +256,7 @@ AR Path="/5F78701C/5F86A311" Ref="C?"  Part="1"
 AR Path="/5F79A745/5F86A311" Ref="C24"  Part="1" 
 F 0 "C24" H 9792 1796 50  0000 L CNN
 F 1 "180u" H 9792 1705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9700 1750 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder" H 9700 1750 50  0001 C CNN
 F 3 "~" H 9700 1750 50  0001 C CNN
 	1    9700 1750
 	1    0    0    -1  
@@ -330,31 +328,8 @@ Wire Wire Line
 	8300 2050 8300 1950
 Connection ~ 8350 2050
 NoConn ~ 7850 1750
-$Comp
-L Device:C_Small C?
-U 1 1 5F88DC45
-P 7650 1550
-AR Path="/5F78701C/5F88DC45" Ref="C?"  Part="1" 
-AR Path="/5F79A745/5F88DC45" Ref="C21"  Part="1" 
-F 0 "C21" H 7742 1596 50  0000 L CNN
-F 1 "10uf" H 7742 1505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 7650 1550 50  0001 C CNN
-F 3 "~" H 7650 1550 50  0001 C CNN
-	1    7650 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7650 1450 7650 1350
-Connection ~ 7650 1350
-Wire Wire Line
-	7650 1350 7900 1350
-Wire Wire Line
-	7650 1650 7650 1700
-Wire Wire Line
-	7650 1700 7300 1700
-Connection ~ 7300 1700
-Text Notes 6100 3450 0    50   ~ 0
-Vsense voltage divider chosen for 5.4V as there is about .4V drop accross protection diode.\n\np-channel reverse voltage protection\nInductor: SLW6045S220MST\nCout: Calculated to be 165uf == 180uf\nCout ESRmax = 49mohm\nPH diode: SS34\nprotection diode: SS34\n\n
+Text Notes 6100 3650 0    50   ~ 0
+Vsense voltage divider chosen for 5.4V as there is about .4V drop accross protection diode.\n\np-channel reverse voltage protection\nEAIA\nInductor: SLW6045S220MST\nCout: Calculated to be 165uf == 180uf\nCout ESRmax = 49mohm\nPH diode: SS34\nprotection diode: SS34\n\nTantalum Capacitor: TPME227K016R0040\nEAIA: 7343-43
 $Comp
 L Device:R_Small R28
 U 1 1 5F8920FC
@@ -540,7 +515,7 @@ AR Path="/5F78701C/5F89AD20" Ref="D?"  Part="1"
 AR Path="/5F79A745/5F89AD20" Ref="D3"  Part="1" 
 F 0 "D3" H 6700 4750 50  0000 C CNN
 F 1 "_" H 6700 4534 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" V 6700 4650 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" V 6700 4650 50  0001 C CNN
 F 3 "~" V 6700 4650 50  0001 C CNN
 	1    6700 4650
 	-1   0    0    1   
@@ -868,4 +843,6 @@ Wire Wire Line
 Wire Wire Line
 	1950 4200 1950 4150
 Connection ~ 1950 4150
+Wire Wire Line
+	7300 1350 7900 1350
 $EndSCHEMATC

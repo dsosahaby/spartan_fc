@@ -1,4 +1,4 @@
-update=Monday, 26 October 2020 at 04:55:13 pm
+update=Sunday, 01 November 2020 at 08:03:15 pm
 version=1
 last_client=kicad
 [general]
@@ -39,11 +39,20 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
+TrackWidth2=0.3
+TrackWidth3=0.4
+TrackWidth4=0.5
+TrackWidth5=1
 ViaDiameter1=0.8
 ViaDrill1=0.4
+ViaDiameter2=0.45
+ViaDrill2=0.2
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
+dPairWidth2=0.261112
+dPairGap2=0.2032
+dPairViaGap2=0.2032
 SilkLineWidth=0.12
 SilkTextSizeV=1
 SilkTextSizeH=1

@@ -602,7 +602,7 @@ U 1 1 5F9AF36D
 P 9100 1750
 F 0 "J13" H 9150 2167 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 9150 2076 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Horizontal" H 9100 1750 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 9100 1750 50  0001 C CNN
 F 3 "~" H 9100 1750 50  0001 C CNN
 	1    9100 1750
 	1    0    0    -1  

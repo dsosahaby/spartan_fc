@@ -107,19 +107,6 @@ Wire Notes Line
 Text Notes 6150 5200 0    50   ~ 0
 Low Dropout Voltage Regulator to power stm32\nProtection Diode: B5819W
 $Comp
-L Regulator_Linear:NCP1117-3.3_TO252 U?
-U 1 1 5F7A601F
-P 7850 4400
-AR Path="/5F78701C/5F7A601F" Ref="U?"  Part="1" 
-AR Path="/5F79A745/5F7A601F" Ref="U5"  Part="1" 
-F 0 "U5" H 7850 4642 50  0000 C CNN
-F 1 "NCP1117-3.3_TO252" H 7850 4551 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 7850 4625 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 7850 4400 50  0001 C CNN
-	1    7850 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED_Small D?
 U 1 1 5F7A6056
 P 4950 1600
@@ -845,4 +832,15 @@ Wire Wire Line
 Connection ~ 1950 4150
 Wire Wire Line
 	7300 1350 7900 1350
+$Comp
+L Regulator_Linear:AMS1117-3.3 U?
+U 1 1 5FA17F2E
+P 7850 4400
+F 0 "U?" H 7850 4642 50  0000 C CNN
+F 1 "AMS1117-3.3" H 7850 4551 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7850 4600 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 7950 4150 50  0001 C CNN
+	1    7850 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

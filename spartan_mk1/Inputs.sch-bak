@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -216,23 +216,8 @@ Text Notes 2300 3750 0    50   ~ 0
 SBUS/hardware \ninverted protocols\n
 Text Notes 1000 3150 0    157  ~ 0
 UART Connections
-Text Notes 4050 3150 0    157  ~ 0
-SPI
-$Comp
-L Connector:Conn_01x04_Female J7
-U 1 1 5FB46CD9
-P 4000 3700
-F 0 "J7" H 3892 4085 50  0000 C CNN
-F 1 "Conn_01x04_Female" H 3892 3994 50  0000 C CNN
-F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 4000 3700 50  0001 C CNN
-F 3 "~" H 4000 3700 50  0001 C CNN
-	1    4000 3700
-	-1   0    0    -1  
-$EndComp
 Wire Notes Line
 	1050 3200 3100 3200
-Wire Notes Line
-	3550 3200 3550 4250
 Text HLabel 1800 4200 2    50   Input ~ 0
 UART2_TX
 Wire Wire Line
@@ -249,28 +234,6 @@ Text HLabel 1800 5600 2    50   Input ~ 0
 UART4_TX
 Text HLabel 1800 5700 2    50   Input ~ 0
 UART4_RX
-Text HLabel 4250 3600 2    50   Input ~ 0
-SPI_SCK
-Text HLabel 4250 3700 2    50   Input ~ 0
-SPI_MOSI
-Text HLabel 4250 3800 2    50   Input ~ 0
-SPI_MISO
-Text HLabel 4250 3900 2    50   Input ~ 0
-SPI_CS
-Wire Wire Line
-	4250 3600 4200 3600
-Wire Wire Line
-	4250 3700 4200 3700
-Wire Wire Line
-	4250 3800 4200 3800
-Wire Wire Line
-	4250 3900 4200 3900
-Wire Notes Line
-	3550 3200 5100 3200
-Wire Notes Line
-	5100 3200 5100 4250
-Wire Notes Line
-	3550 4250 5100 4250
 Text Notes 3900 4900 0    157  ~ 0
 GPIO
 Text HLabel 4250 5300 2    50   Input ~ 0
@@ -515,83 +478,6 @@ Wire Notes Line
 	7600 2400 6050 2400
 Wire Notes Line
 	6050 2400 6050 1100
-$Comp
-L power:+5V #PWR017
-U 1 1 5F9DB766
-P 4500 1250
-F 0 "#PWR017" H 4500 1100 50  0001 C CNN
-F 1 "+5V" H 4515 1423 50  0000 C CNN
-F 2 "" H 4500 1250 50  0001 C CNN
-F 3 "" H 4500 1250 50  0001 C CNN
-	1    4500 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 1250 4500 1300
-Text Notes 5650 3250 0    157  ~ 0
-USB FB
-Text Notes 5650 4450 0    50   ~ 0
-USB Connection Sensing Divider\n
-Wire Notes Line
-	5650 3350 5650 4350
-Wire Notes Line
-	7100 3350 5650 3350
-Wire Notes Line
-	7100 4350 7100 3350
-Wire Notes Line
-	5650 4350 7100 4350
-Text Label 5900 3650 2    50   ~ 0
-Vusb
-Text HLabel 6650 3650 2    50   Input ~ 0
-USB_con
-Wire Wire Line
-	6650 3650 6550 3650
-Wire Wire Line
-	6550 3650 6250 3650
-Connection ~ 6550 3650
-Wire Wire Line
-	6550 3750 6550 3650
-Wire Wire Line
-	6550 3950 6550 4050
-$Comp
-L power:GND #PWR026
-U 1 1 5F97004F
-P 6550 4050
-AR Path="/5F78701C/5F97004F" Ref="#PWR026"  Part="1" 
-AR Path="/5F79A745/5F97004F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR026" H 6550 3800 50  0001 C CNN
-F 1 "GND" H 6555 3877 50  0000 C CNN
-F 2 "" H 6550 4050 50  0001 C CNN
-F 3 "" H 6550 4050 50  0001 C CNN
-	1    6550 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R8
-U 1 1 5F970049
-P 6550 3850
-AR Path="/5F78701C/5F970049" Ref="R8"  Part="1" 
-AR Path="/5F79A745/5F970049" Ref="R?"  Part="1" 
-F 0 "R8" H 6491 3804 50  0000 R CNN
-F 1 "10k" H 6491 3895 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6550 3850 50  0001 C CNN
-F 3 "~" H 6550 3850 50  0001 C CNN
-	1    6550 3850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R7
-U 1 1 5F970043
-P 6150 3650
-AR Path="/5F78701C/5F970043" Ref="R7"  Part="1" 
-AR Path="/5F79A745/5F970043" Ref="R?"  Part="1" 
-F 0 "R7" V 5954 3650 50  0000 C CNN
-F 1 "10k" V 6045 3650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6150 3650 50  0001 C CNN
-F 3 "~" H 6150 3650 50  0001 C CNN
-	1    6150 3650
-	0    1    1    0   
-$EndComp
 Text HLabel 9450 1550 2    50   Input ~ 0
 SWD_SWDIO
 Text Notes 8350 1150 0    157  ~ 0
@@ -763,8 +649,6 @@ BUZZER
 Wire Wire Line
 	5750 5800 5800 5800
 Connection ~ 5800 5800
-Wire Wire Line
-	6050 3650 5900 3650
 Wire Notes Line
 	5250 4900 7650 4900
 Wire Notes Line
@@ -773,4 +657,8 @@ Wire Notes Line
 	7650 6450 5250 6450
 Wire Notes Line
 	5250 4900 5250 6450
+Text HLabel 4500 1200 2    50   Input ~ 0
+V_USB
+Wire Wire Line
+	4500 1200 4500 1300
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -777,7 +777,6 @@ F 3 "" H 1950 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2200 3750 1950 3750
-Connection ~ 1950 3750
 Wire Wire Line
 	1950 3750 1950 3850
 $Comp
@@ -793,8 +792,6 @@ F 3 "~" H 1950 3950 50  0001 C CNN
 	1    1950 3950
 	1    0    0    -1  
 $EndComp
-Text Label 1400 3750 2    50   ~ 0
-Vbat
 Text Notes 1050 3500 0    157  ~ 0
 Battery Voltage Sensing
 Wire Wire Line
@@ -826,21 +823,24 @@ Wire Notes Line
 Wire Notes Line
 	950  7200 950  5900
 Wire Wire Line
-	1400 3750 1950 3750
-Wire Wire Line
 	1950 4200 1950 4150
 Connection ~ 1950 4150
 Wire Wire Line
 	7300 1350 7900 1350
 $Comp
-L Regulator_Linear:AMS1117-3.3 U?
+L Regulator_Linear:AMS1117-3.3 U5
 U 1 1 5FA17F2E
 P 7850 4400
-F 0 "U?" H 7850 4642 50  0000 C CNN
+F 0 "U5" H 7850 4642 50  0000 C CNN
 F 1 "AMS1117-3.3" H 7850 4551 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7850 4600 50  0001 C CNN
 F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 7950 4150 50  0001 C CNN
 	1    7850 4400
 	1    0    0    -1  
 $EndComp
+Text HLabel 1850 3750 0    50   Input ~ 0
+ESC_BAT_SENSE
+Wire Wire Line
+	1850 3750 1950 3750
+Connection ~ 1950 3750
 $EndSCHEMATC

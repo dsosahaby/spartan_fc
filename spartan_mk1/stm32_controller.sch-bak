@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -119,17 +119,6 @@ Wire Wire Line
 Wire Wire Line
 	5150 6150 5150 6200
 Connection ~ 5150 6150
-$Comp
-L power:GNDA #PWR040
-U 1 1 5F82EBD9
-P 5350 6200
-F 0 "#PWR040" H 5350 5950 50  0001 C CNN
-F 1 "GNDA" H 5355 6027 50  0000 C CNN
-F 2 "" H 5350 6200 50  0001 C CNN
-F 3 "" H 5350 6200 50  0001 C CNN
-	1    5350 6200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4250 3550 4250 3500
 $Comp
@@ -574,18 +563,6 @@ Text HLabel 7200 3300 2    50   Input ~ 0
 SPI1_MISO
 Text HLabel 7200 3400 2    50   Input ~ 0
 SPI1_MOSI
-Text HLabel 6000 5700 2    50   Input ~ 0
-SPI2_SCK
-Wire Wire Line
-	6000 5700 5950 5700
-Text HLabel 4500 4600 0    50   Input ~ 0
-SPI2_MISO
-Text HLabel 4500 4700 0    50   Input ~ 0
-SPI2_MOSI
-Wire Wire Line
-	4500 4700 4550 4700
-Wire Wire Line
-	4500 4600 4550 4600
 Text HLabel 6000 4400 2    50   Input ~ 0
 MOTOR_4
 Text HLabel 6000 4500 2    50   Input ~ 0
@@ -768,14 +745,10 @@ Wire Wire Line
 Connection ~ 6600 3300
 Wire Wire Line
 	6600 3300 6600 3600
-Text HLabel 6000 5200 2    50   Input ~ 0
-SPI2_CS
 Wire Wire Line
 	6000 5300 5950 5300
 Text HLabel 6000 5300 2    50   Input ~ 0
 GPIO_1
-Wire Wire Line
-	6000 5200 5950 5200
 Text HLabel 6000 4000 2    50   Input ~ 0
 SWDIO
 Wire Wire Line
@@ -811,10 +784,6 @@ Wire Wire Line
 	4500 2700 4550 2700
 NoConn ~ 4550 5000
 NoConn ~ 4550 5100
-Text HLabel 6000 4800 2    50   Input ~ 0
-USB_CON
-Wire Wire Line
-	6000 4800 5950 4800
 Text HLabel 4500 4200 0    50   Input ~ 0
 UART5_RX
 Wire Wire Line
@@ -839,8 +808,6 @@ Wire Wire Line
 	6000 4900 5950 4900
 Wire Wire Line
 	4550 4400 4500 4400
-Wire Wire Line
-	5350 6100 5350 6200
 Wire Wire Line
 	5950 3200 7200 3200
 Wire Wire Line
@@ -897,4 +864,14 @@ F 3 "" H 4250 3550 50  0001 C CNN
 	1    4250 3550
 	1    0    0    -1  
 $EndComp
+NoConn ~ 5950 4800
+Wire Wire Line
+	5350 6100 5350 6150
+Wire Wire Line
+	5350 6150 5250 6150
+Connection ~ 5250 6150
+NoConn ~ 5950 5200
+NoConn ~ 5950 5700
+NoConn ~ 4550 4700
+NoConn ~ 4550 4600
 $EndSCHEMATC

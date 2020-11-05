@@ -94,7 +94,7 @@ Wire Wire Line
 	1300 5550 1350 5550
 Wire Wire Line
 	10500 2900 10450 2900
-Text Label 7200 3850 0    50   ~ 0
+Text Label 7200 4050 0    50   ~ 0
 V_BAT_SENSE
 Wire Wire Line
 	7200 3850 7150 3850
@@ -322,7 +322,7 @@ Text Label 3000 2800 0    50   ~ 0
 V_BAT_SENSE
 Wire Wire Line
 	3000 2800 2950 2800
-Text Label 7200 4050 0    50   ~ 0
+Text Label 7200 3850 0    50   ~ 0
 GEN_ADC
 Wire Wire Line
 	7200 4050 7150 4050

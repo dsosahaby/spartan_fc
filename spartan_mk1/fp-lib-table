@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name images)(type KiCad)(uri /Users/danielsosa/Documents/Work/Projects/Quadcopter/Hardware/PCB/images)(options "")(descr ""))
+)
